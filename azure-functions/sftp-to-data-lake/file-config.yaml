@@ -1,0 +1,34 @@
+source-storage-connection-string: "<your_source_storage_connection_string>"
+destination-storage-connection-string: "<your_destination_storage_connection_string>"
+
+vendors:
+  test-vendor:
+    source-container: 'test-vendor'
+    folders:
+      test-folder:
+        files:
+          test-file:
+            file-mnemonic: 'test-file'
+            file-pattern: '*test*'
+  allied:
+  	source-container: 'allied'
+  	destination-container: 'allied'
+    folders:
+      members:
+      	folder-mnemonic: 'members'
+        files:
+          eligibility:
+          	file-mnemonic: 'eligibility'
+          	file-pattern: '*eligibility*'
+      claims:
+      	folder-mnemonic: 'claims'
+      	files:
+      	  claim-header:
+      	    file-mnemonic: 'claim-header'
+      	    file-pattern: '*claims*'
+      	  claim-detail:
+      	    file-mnemonic: 'claim-detail'
+      	    file-pattern: '*claim lines*'
+      	  rx-claim-detail:
+      	    file-mnemonic: 'rx-claim-detail'
+      	    file-pattern: '*rx*'
